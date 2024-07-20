@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.adityamshidlyali.vtunotify.view.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_placementFragment"
+            app:destination="@id/placementFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_examCircularsFragment"
+            app:destination="@id/examCircularsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_examTimeTableFragment"
+            app:destination="@id/examTimeTableFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_circularNotificationFragment"
+            app:destination="@id/circularNotificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_workshopsFragment"
+            app:destination="@id/workshopsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/circularNotificationFragment"
+        android:name="com.adityamshidlyali.vtunotify.view.fragments.CircularNotificationFragment"
+        android:label="fragment_circular_notification"
+        tools:layout="@layout/fragment_circular_notification" />
+    <fragment
+        android:id="@+id/examTimeTableFragment"
+        android:name="com.adityamshidlyali.vtunotify.view.fragments.ExamTimeTableFragment"
+        android:label="fragment_exam_timetable"
+        tools:layout="@layout/fragment_exam_timetable" />
+    <fragment
+        android:id="@+id/examCircularsFragment"
+        android:name="com.adityamshidlyali.vtunotify.view.fragments.ExamCircularsFragment"
+        android:label="fragment_exam_circular"
+        tools:layout="@layout/fragment_exam_circular" />
+    <fragment
+        android:id="@+id/placementFragment"
+        android:name="com.adityamshidlyali.vtunotify.view.fragments.PlacementFragment"
+        android:label="fragment_placement"
+        tools:layout="@layout/fragment_placement" />
+    <fragment
+        android:id="@+id/workshopsFragment"
+        android:name="com.adityamshidlyali.vtunotify.view.fragments.WorkshopsFragment"
+        android:label="fragment_workshop"
+        tools:layout="@layout/fragment_workshop" />
+
+</navigation>
